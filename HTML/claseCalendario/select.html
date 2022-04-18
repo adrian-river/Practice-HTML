@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Select</title>
+    </head>
+    <body>
+        <main>
+            <p><h2>primera lista de seleccion</h2></p>
+            <!-- // dos formas para crear listas-->
+            // esta opcion no es muy recomendada para muchas opciones
+            <select name="cursos" id="">
+                <option value="Javascript">Javascript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS">CSS</option>
+                <option value="Web Standards">Web Standards</option>
+            </select> 
+            <p><h2>segunada lista de seleccion</h2></p>
+            <!-- // mejor opcion para crear una lista
+                    ya que al ser una etiqueta input se le permite escribir
+                    al usuario y po lo tanto buscar la opcion que prefiera-->
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="Javascript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS"></option>
+                <option value="Web Standards"></option>
+            </datalist>
+        </main>
+    </body>
+</html>

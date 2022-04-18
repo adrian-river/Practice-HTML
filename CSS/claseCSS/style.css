@@ -1,0 +1,23 @@
+p {
+    color:blueviolet;
+    font-size: 25px;
+}
+
+/* class */
+
+.parrafo {
+    color: crimson;
+    font-size: 50px;
+}
+
+.text {
+    color:maroon;
+    font-size: 40px;
+}
+
+/* ID */
+
+#texto {
+    color: orangered;
+    font-size: 35 px;
+}

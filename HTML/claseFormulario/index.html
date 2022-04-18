@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombre">
+                <!-- //nuevas cosas como "autocomplete" como su nombre lo dice
+                       autocompleta segun las respuestas anteriores hechas por el mismo
+                       usuario-->
+                <span>¿Cual es tu nombre?</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required/>
+            </label>
+            <label for="correo">
+                <!-- //input type="email" para datos de correos electronicos-->
+                <span>¿Cual es tu email?</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required />
+            </label>
+            <label for="pais">
+                <!-- //input type="text" datos en texto pero lo utilizo para nombrar el pais-->
+                <span>¿En que pais vives?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required />
+            </label>
+            <label for="CP">
+                <span>¿Cual es tu codigo postal?</span>
+                <!-- //input type="text" de nuevo texto pero en este caso para el codigo postal-->
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required />
+                // autocomplete guardara guardara la opciones anteriores hechas por el usuario
+            </label>
+            <input type="submit" />
+        </form>
+    </main>
+</body>
+</html>
