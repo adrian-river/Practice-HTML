@@ -1,3 +1,5 @@
+/*es una mala practica utilizar tanto los id*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,29 +12,43 @@ h1 {
     margin-bottom: 10px;
 }
 
-#page-title {
+/* #page-title {
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .title {
     font-size: 18px;
     font-family: monospace;
 }
 
-#main-nav {
+/*se reemplaza #main-nav por la clase nav */
+.nav {
     margin-top: 10px;
     list-style-type: none;
     padding-left: 0;
 }
 
-#main-nav li {
+.nav li {
     display: inline-block;
 }
 
-#main-nav a {
+/*poner el cursor sobre el id para saber el selector de especificidad */
+.nav a {
     color: white;
     background-color: coral;
     padding: 5px;
     border-radius: 2px;
     text-decoration: none;
+}
+
+/*se agrega un background a la clase blog, pero no cambiara por el 
+  estilo embebido*/
+.blog {
+    background-color: blue;
+}
+
+/*mismo ejemplo que el de arriba solo que agregando especificidad
+  y sin el estilo embebido */
+.cursos {
+    background-color: green;
 }
